@@ -3,41 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uriel Maza | Portafolio</title>
+    <meta name="description" content="Portafolio de Uriel Maza, desarrollador web.">
+    <meta name="keywords" content="Uriel Maza, Web Developer, Portfolio, Projects">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Uriel Maza - Web Developer Portfolio">
+    <meta property="og:description" content="Portafolio de Uriel Maza, desarrollador web.">
+    <meta property="og:image" content="img/IMG_E4030.JPG">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Uriel Maza - Web Developer Portfolio">
+    <meta property="twitter:description" content="Portafolio de Uriel Maza, desarrollador web.">
+    <meta property="twitter:image" content="img/IMG_E4030.JPG">
+    <link rel="icon" href="img/IMG_E4030.JPG">
     <link rel="stylesheet" href="styles.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="menu-container">
-        <button>
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
+    <nav class="navbar">
+        <a href="#aboutMe">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <ul class="menu">
-            <a href="">About me</a>
-            <a href="">Skills</a>
-            <a href="">Experience</a>
-            <a href="">Proyects</a>
-            <a href="">Contact</a>
-        </ul>
-    </div>
-    <img src="img/IMG_E4030.JPG">
-    <h1>Uriel Maza</h1>
-    <h2>WEB DEVELOPER IN PROCESS</h2>
-        
+    <main class="content">
 
-    <h1>Quien soy yo?</h1>
-    <p>Hola, yo soy Uriel Maza, soy futuro desarrolador web, full stack </p>
+        <!-- Perfil / Resume -->
+        <section class="profile-section" id="aboutMe">
+            <img class="profile-img" src="img/IMG_E4030.JPG" alt="Uriel Maza">
+            <div>
+                <h1>Uriel Maza</h1>
+                <h2>Web Developer in Process</h2>
+                <p>Hi, I'm Uriel Maza, a future full stack web developer passionate about technology and learning new things every day.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/urielmazaa_" target="_blank" class="social-icon instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/uriieelsiito" target="_blank" class="social-icon twitter" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <h1>Skills</h1>
-    <p>PHP</p>
-    <p>Base de datos</p>
-    <p>Javascript</p>
+        <hr class="section-divider">
 
-    <h1>projects</h1>
-    <a href="https://proyectocolibri.com.ar/"><img src="https://proyectocolibri.com.ar/assets/img/ProyectoColibrilogo.png"></a>
-    <a href="https://urielmaza.github.io/EVENTUM/"><img src="https://urielmaza.github.io/EVENTUM/img/evento1.jpg"></a>
-    <h1>Contact</h1>
+        <!-- About Me -->
+        <section class="aboutMe bodyContainer" id="about">
+            <div class="aboutMe--title">
+                <h1>Who am I?</h1>
+            </div>
+            <div class="aboutMe--description">
+                <p>
+                    Hi, I'm Uriel Maza, a future full stack web developer passionate about technology and learning new things every day.
+                </p>
+            </div>
+        </section>
+
+        <div class="subtitle" id="skills">
+            <h2>Skills</h2>
+        </div>
+        <section class="skills-section">
+            <div class="skills-list">
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP">
+                    <span>PHP</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://techorigine.com/wp-content/uploads/2024/06/mysql-la-gi-870x457.png" alt="MySQL">
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="subtitle" id="experience">
+            <h2>Experience</h2>
+        </div>
+        <section class="experience-section">
+            <div style="font-size:1.1rem; color:#444;">
+                <p>Coming soon...</p>
+            </div>
+        </section>
+
+        <div class="subtitle" id="projects">
+            <h2>Projects</h2>
+        </div>
+        <section class="projects-section">
+            <div class="projects-list">
+                <a href="https://proyectocolibri.com.ar/" target="_blank">
+                    <img src="https://proyectocolibri.com.ar/assets/img/ProyectoColibrilogo.png" alt="Proyecto Colibri">
+                </a>
+                <a href="https://urielmaza.github.io/EVENTUM/" target="_blank">
+                    <img src="https://urielmaza.github.io/EVENTUM/img/evento1.jpg" alt="Eventum">
+                </a>
+            </div>
+        </section>
+
+        <div class="subtitle" id="contact">
+            <h2>Contact</h2>
+        </div>
+        <section class="contact-section">
+            <p>You can find me on:</p>
+            <div class="social-links">
+                <a href="https://instagram.com/urielmazaa_" target="_blank" class="social-icon instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/uriieelsiito" target="_blank" class="social-icon twitter" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
