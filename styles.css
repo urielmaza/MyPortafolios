@@ -89,6 +89,12 @@ section {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 .skills-list,
@@ -99,6 +105,7 @@ section {
     gap: 1rem;
 }
 
+/* Skills */
 .skill-card,
 .projects-list a,
 .social-icon {
@@ -110,6 +117,14 @@ section {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover,
+.projects-list a:hover,
+.social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .projects-list a {
@@ -118,6 +133,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    border-radius: var(--radius);
 }
 
 .projects-list img {
@@ -125,6 +142,11 @@ section {
     max-height: 100%;
     object-fit: cover;
     border-radius: var(--radius);
+    transition: transform 0.3s ease;
+}
+
+.projects-list a:hover img {
+    transform: scale(1.1);
 }
 
 .social-icon {
@@ -134,11 +156,13 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
