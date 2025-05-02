@@ -116,7 +116,7 @@ section {
     box-shadow: var(--shadow);
     color: var(--text-color);
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 200;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
