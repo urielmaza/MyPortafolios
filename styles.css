@@ -123,9 +123,10 @@ section {
 .skill-card img {
     width: 50px;
     height: 50px;
-    object-fit: contain;
     display: block;
     margin: 0 auto 0.5rem;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
 }
 
 .skill-card:hover,
