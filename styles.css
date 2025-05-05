@@ -120,6 +120,13 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.skill-card img {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
 .skill-card:hover,
 .projects-list a:hover,
 .social-icon:hover {
