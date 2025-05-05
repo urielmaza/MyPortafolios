@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <a href="#aboutMe">About me</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -29,6 +29,7 @@
     </nav>
 
     <main class="content">
+
         <!-- Perfil / Resume -->
         <section class="profile-section" id="aboutMe">
             <img class="profile-img" src="img/IMG_E4030.JPG" alt="Uriel Maza">
@@ -77,16 +78,16 @@
         </div>
         <section class="projects-section">
             <div class="projects-list">
-                <a href="https://proyectocolibri.com.ar/" target="_blank" rel="noopener">
+                <a href="https://proyectocolibri.com.ar/" target="_blank">
                     <img src="https://proyectocolibri.com.ar/assets/img/ProyectoColibrilogo.png" alt="Proyecto Colibri">
                 </a>
-                <a href="https://urielmaza.github.io/EVENTUM/" target="_blank" rel="noopener">
+                <a href="https://urielmaza.github.io/EVENTUM/" target="_blank">
                     <img src="https://urielmaza.github.io/EVENTUM/img/evento1.jpg" alt="Eventum">
                 </a>
-                <a href="https://educontrol2025.github.io/educontrol/" target="_blank" rel="noopener">
+                <a href="https://educontrol2025.github.io/educontrol/" target="_blank">
                     <img src="https://www.iidhamerica.org/img/noticias/64481f3d579fd.jpeg" alt="EduControl">
                 </a>
-                <a href="https://urielmaza.github.io/papaplus/" target="_blank" rel="noopener">
+                <a href="https://urielmaza.github.io/papaplus/">
                     <img src="https://assets.unileversolutions.com/recipes-v3/216192-default.png?im=AspectCrop=(625,537);Resize=(625,537)" alt="papaplus">
                 </a>
             </div>
@@ -99,56 +100,17 @@
             <p>You can find me on:</p>
             <br>
             <div class="social-links">
-                <a href="https://instagram.com/urielmazaa_" target="_blank" rel="noopener" class="social-icon instagram" title="Instagram">
+                <a href="https://instagram.com/urielmazaa_" target="_blank" class="social-icon instagram" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://twitter.com/uriieelsiito" target="_blank" rel="noopener" class="social-icon twitter" title="X">
+                <a href="https://twitter.com/uriieelsiito" target="_blank" class="social-icon twitter" title="X">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/uriel-maza-a85276360/" target="_blank" rel="noopener" class="social-icon linkedin" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/uriel-maza-a85276360/" target="_blank" class="social-icon linkedIn" title="linkedIn">
+                    <i class="fab fa-linkedIn"></i>
                 </a>
             </div>
         </section>
     </main>
-
-    <!-- Script para suavizar la navegación y añadir funcionalidad al menú -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling para enlaces internos
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-            
-            // Detectar posición de scroll para resaltar elementos del menú
-            window.addEventListener('scroll', function() {
-                const sections = document.querySelectorAll('section');
-                const navLinks = document.querySelectorAll('.navbar a');
-                
-                let current = '';
-                
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= sectionTop - 60) {
-                        current = section.getAttribute('id');
-                    }
-                });
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').substring(1) === current) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
